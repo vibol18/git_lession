@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .product-container{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+     .product-card{
+        border-radius: 20px;
+        background-color: rgb(254, 255, 255);
+        width: 350px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+     }
+       .img-box{
+        overflow: hidden;          
+        border-radius: 10px;
+    }
+      .img-box img{
+        display: block;
+        width: 100%;
+    }
+    .title{
+        display: flex;
+        justify-content: space-between;  
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .text{
+        font-weight: 700;
+        font-style: italic;
+        font-size: 15px;
+        width: 60%;
+    }
+      button{
+        background-color: #1c1c1c;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 16px;
+        font-family: inherit;
+        white-space: nowrap;
+    }
+    .products-name{
+        color: gray;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+    .price{
+        font-weight: 700;
+        margin-top: 8px;
+    }
+    .color{
+        display: flex;
+        gap: 12px;
+        margin-top: 15px;
+    }
+    .color div{
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+    }
+    .blue{ 
+        background-color: #1fc3ff; 
+    }
+    .green{
+         background-color: #5ecba1; 
+        }
+    .black{ 
+        background-color: #000000; 
+    }
+    .pink{ 
+        background-color: #ff9fba; 
+    }
+ 
+</style>
+<body>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="img-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdsNcPQzq3MioIfIZKlfjZDFrYsIQ1aFh23f2j36cMlA&s=10" alt="shoe">            
+            </div>
+            <div class="title">
+                <div class="text">Snickers off white 2024</div>
+                <button>+ Add To Cart</button>
+            </div>
+            <div class="product-name">NIKE</div>
+            <div class="product-price">99.9$</div>
+            <div class="color">
+                    <div class="blue"></div>
+                    <div class="green"></div>
+                    <div class="black"></div>
+                    <div class="pink"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
